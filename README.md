@@ -19,18 +19,18 @@ By considering both time complexity and space complexity, we can choose algorith
 
 ## Sorting Algorithms:
 
-### [Quick Sort](./sorting/quicksort.go)
+### [Quick Sort](./sorting/quick.go)
 Divide-and-conquer algorithm that selects a pivot, partitions the array, and recursively sorts sub-arrays. 
 
 Time complexity (average):`O(n log n)`.
 
-### [Merge Sort](./sorting/mergesort.go)
+### [Merge Sort](./sorting/merge.go)
 Divide-and-conquer algorithm that divides the array into two halves,
 recursively sorts the sub-arrays, and then merges them.
 
 Time complexity (average):`O(n log n)`.
 
-### Heap Sort
+### [Heap Sort](./sorting/heap.go)
 Utilizes a binary heap data structure.
 
 Time complexity (average): O(n log n).
