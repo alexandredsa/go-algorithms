@@ -73,7 +73,8 @@ Time complexity:`O(n log n)`.
 ## Computational Complexity:
 
 ### Big O notation
-Big O notation is a mathematical notation used to describe the upper bound or worst-case scenario of an algorithm's time complexity or space complexity. It provides an asymptotic upper limit on the growth rate of an algorithm as the input size approaches infinity. The notation is denoted as O(f(n)), where 'f(n)' represents a function that describes the growth rate of the algorithm.
+Big O notation is a mathematical notation used to describe the upper bound or worst-case scenario (Big O) of an algorithm's time complexity or space complexity. It provides an asymptotic upper limit on the growth rate of an algorithm as the input size approaches infinity. The notation is denoted as O(f(n)), where 'f(n)' represents a function that describes the growth rate of the algorithm. Similarly, Omega notation (Ω) represents the lower bound or best-case scenario, and Theta notation (Θ) provides a tight bound or average-case scenario for the algorithm's complexity. These notations (O, Ω, Θ) help analyze and compare algorithms based on their efficiency and scalability.
+
 
 ### Time Complexity Analysis
 Time complexity is like measuring how fast an algorithm is. It tells us how the running time of an algorithm grows as the input gets bigger. Think of it as counting the number of steps the algorithm needs to perform for a given input. The time complexity is usually represented using Big O notation, which gives us an idea of the worst-case scenario and how the algorithm's performance scales with larger inputs.
