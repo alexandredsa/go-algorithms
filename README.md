@@ -1,3 +1,22 @@
+
+## Computational Complexity:
+
+### Big O notation
+Big O notation is a mathematical notation used to describe the upper bound or worst-case scenario (Big O) of an algorithm's time complexity or space complexity. It provides an asymptotic upper limit on the growth rate of an algorithm as the input size approaches infinity. The notation is denoted as O(f(n)), where 'f(n)' represents a function that describes the growth rate of the algorithm. Similarly, Omega notation (Ω) represents the lower bound or best-case scenario, and Theta notation (Θ) provides a tight bound or average-case scenario for the algorithm's complexity. These notations (O, Ω, Θ) help analyze and compare algorithms based on their efficiency and scalability.
+
+
+### Time Complexity Analysis
+Time complexity is like measuring how fast an algorithm is. It tells us how the running time of an algorithm grows as the input gets bigger. Think of it as counting the number of steps the algorithm needs to perform for a given input. The time complexity is usually represented using Big O notation, which gives us an idea of the worst-case scenario and how the algorithm's performance scales with larger inputs.
+
+For example, if an algorithm has a time complexity of O(n), it means that if we double the input size, the algorithm will take roughly twice as long to run. If it has a time complexity of O(n^2), doubling the input size will make the algorithm take roughly four times as long. So, time complexity helps us understand how efficient an algorithm is and how it handles larger and more complex tasks.
+
+### Space Complexity Analysis
+Space complexity is like measuring how much memory an algorithm needs. It tells us how the memory usage of an algorithm grows as the input gets bigger. It's important because computers have limited memory resources, and we want to make sure our algorithms don't use more memory than necessary.
+
+Space complexity is also represented using Big O notation. It helps us understand how the additional memory used by the algorithm grows with larger inputs. For example, if an algorithm has a space complexity of O(n), it means that the amount of additional memory it needs is directly proportional to the input size. If it has a space complexity of O(1), it means it requires a constant amount of additional memory, regardless of the input size.
+
+By considering both time complexity and space complexity, we can choose algorithms that are not only fast but also use memory efficiently. These complexities help us evaluate and compare different algorithms to make informed decisions based on the efficiency and resource usage required for our specific tasks.
+
 ## Sorting Algorithms:
 
 ### [Quick Sort](./sorting/quicksort.go)
@@ -69,21 +88,3 @@ Time complexity:`O(n log n)`.
 ### Red-Black Trees
 ### Trie (Prefix Tree)
 ### B-trees
-
-## Computational Complexity:
-
-### Big O notation
-Big O notation is a mathematical notation used to describe the upper bound or worst-case scenario (Big O) of an algorithm's time complexity or space complexity. It provides an asymptotic upper limit on the growth rate of an algorithm as the input size approaches infinity. The notation is denoted as O(f(n)), where 'f(n)' represents a function that describes the growth rate of the algorithm. Similarly, Omega notation (Ω) represents the lower bound or best-case scenario, and Theta notation (Θ) provides a tight bound or average-case scenario for the algorithm's complexity. These notations (O, Ω, Θ) help analyze and compare algorithms based on their efficiency and scalability.
-
-
-### Time Complexity Analysis
-Time complexity is like measuring how fast an algorithm is. It tells us how the running time of an algorithm grows as the input gets bigger. Think of it as counting the number of steps the algorithm needs to perform for a given input. The time complexity is usually represented using Big O notation, which gives us an idea of the worst-case scenario and how the algorithm's performance scales with larger inputs.
-
-For example, if an algorithm has a time complexity of O(n), it means that if we double the input size, the algorithm will take roughly twice as long to run. If it has a time complexity of O(n^2), doubling the input size will make the algorithm take roughly four times as long. So, time complexity helps us understand how efficient an algorithm is and how it handles larger and more complex tasks.
-
-### Space Complexity Analysis
-Space complexity is like measuring how much memory an algorithm needs. It tells us how the memory usage of an algorithm grows as the input gets bigger. It's important because computers have limited memory resources, and we want to make sure our algorithms don't use more memory than necessary.
-
-Space complexity is also represented using Big O notation. It helps us understand how the additional memory used by the algorithm grows with larger inputs. For example, if an algorithm has a space complexity of O(n), it means that the amount of additional memory it needs is directly proportional to the input size. If it has a space complexity of O(1), it means it requires a constant amount of additional memory, regardless of the input size.
-
-By considering both time complexity and space complexity, we can choose algorithms that are not only fast but also use memory efficiently. These complexities help us evaluate and compare different algorithms to make informed decisions based on the efficiency and resource usage required for our specific tasks.
