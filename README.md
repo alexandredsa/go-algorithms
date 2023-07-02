@@ -19,39 +19,37 @@ By considering both time complexity and space complexity, we can choose algorith
 
 ## Sorting Algorithms:
 
+| Sorting Algorithm | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
+| ----------------- | ------------------- | ----------------------- | -------------------- |
+| Quick Sort        | O(n log n)          | O(n log n)              | O(n^2)               |
+| Merge Sort        | O(n log n)          | O(n log n)              | O(n log n)           |
+| Heap Sort         | O(n log n)          | O(n log n)              | O(n log n)           |
+| Insertion Sort    | O(n)                | O(n^2)                  | O(n^2)               |
+| Selection Sort    | O(n^2)              | O(n^2)                  | O(n^2)               |
+| Bubble Sort       | O(n)                | O(n^2)                  | O(n^2)               |
+
+
 ### [Quick Sort](./sorting/quick.go)
 Divide-and-conquer algorithm that selects a pivot, partitions the array, and recursively sorts sub-arrays. 
-
-Time complexity (average):`O(n log n)`.
 
 ### [Merge Sort](./sorting/merge.go)
 Divide-and-conquer algorithm that divides the array into two halves,
 recursively sorts the sub-arrays, and then merges them.
 
-Time complexity (average):`O(n log n)`.
-
 ### [Heap Sort](./sorting/heap.go)
 Utilizes a binary heap data structure.
-
-Time complexity (average): `O(n log n)`.
 
 ### [Insertion Sort](./sorting/insertion.go)
 Simple sorting algorithm that builds the final sorted array
 one item at a time.
 
-Time complexity (average): `O(n^2)`.
-
 ### [Selection Sort](./sorting/selection.go)
 In-place comparison sorting algorithm.
-
-Time complexity (average): `O(n^2)`.
 
 ### [Bubble Sort](./sorting/bubble.go)
 Comparison-based sorting algorithm that repeatedly steps through the list,
 compares adjacent elements, and swaps them if they are in the wrong order.
 The pass through the list is repeated until the list is sorted.
-
-Time complexity (average): `O(n^2)`.
 
 ## Searching Algorithms:
 
