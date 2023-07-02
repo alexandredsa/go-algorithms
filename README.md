@@ -19,7 +19,7 @@ By considering both time complexity and space complexity, we can choose algorith
 
 ## Sorting Algorithms:
 
-| Sorting Algorithm | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
+| Algorithm | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
 | ----------------- | ------------------- | ----------------------- | -------------------- |
 | Quick Sort        | O(n log n)          | O(n log n)              | O(n^2)               |
 | Merge Sort        | O(n log n)          | O(n log n)              | O(n log n)           |
