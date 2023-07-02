@@ -22,7 +22,7 @@ func TestSortingAlgorithms(t *testing.T) {
 		{[]int{50, 40, 30, 20, 10}, []int{10, 20, 30, 40, 50}},
 	}
 
-	sorters := []Sorter{QuickSort{}, MergeSort{}}
+	sorters := []Sorter{QuickSort{}, MergeSort{}, HeapSort{}}
 
 	for _, testCase := range testCases {
 		arr := make([]int, len(testCase.input))
