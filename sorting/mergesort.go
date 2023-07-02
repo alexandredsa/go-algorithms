@@ -15,7 +15,6 @@ Merge the two sorted sub-arrays back into a single sorted array.
 This involves comparing elements from both sub-arrays and placing them in the correct order.
 
 Time complexity: O(n log n).
-
 **/
 
 type MergeSort struct {

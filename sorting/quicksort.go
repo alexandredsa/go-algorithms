@@ -21,15 +21,8 @@ This means applying the partitioning step to each sub-array until the entire arr
 4. Combine the results: As the recursive calls finish, the sub-arrays become sorted.
 The sorted sub-arrays are combined to form the final sorted array.
 
-
-
 Time complexity: O(n log n).
-
-However, in the worst case, where the chosen pivot is consistently the smallest or largest element,
-the time complexity can degrade to O(n^2). This can happen if the input array is already sorted
-or nearly sorted. To mitigate this, various pivot selection strategies,
-such as randomization or choosing the median of three values, can be employed.
-**/
+*/
 
 type QuickSort struct {
 }

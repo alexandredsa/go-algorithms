@@ -1,11 +1,15 @@
 ## Sorting Algorithms:
 
 ### [Quick Sort](./sorting/quicksort.go)
-Divide-and-conquer algorithm that selects a pivot, partitions the array, and recursively sorts sub-arrays.
+Divide-and-conquer algorithm that selects a pivot, partitions the array, and recursively sorts sub-arrays. 
+
+Time complexity:`O(n log n)`.
 
 ### [Merge Sort](./sorting/mergesort.go)
 Divide-and-conquer algorithm that divides the array into two halves,
 recursively sorts the sub-arrays, and then merges them.
+
+Time complexity:`O(n log n)`.
 
 ### Heap Sort
 
