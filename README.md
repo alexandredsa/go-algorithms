@@ -33,9 +33,13 @@ Time complexity (average):`O(n log n)`.
 ### [Heap Sort](./sorting/heap.go)
 Utilizes a binary heap data structure.
 
-Time complexity (average): O(n log n).
+Time complexity (average): `O(n log n)`.
 
-### Insertion Sort
+### [Insertion Sort](./sorting/insertion.go)
+Simple sorting algorithm that builds the final sorted array
+one item at a time.
+
+Time complexity (average): `O(n^2)`.
 
 ### Selection Sort
 
