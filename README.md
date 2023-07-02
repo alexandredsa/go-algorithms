@@ -46,6 +46,13 @@ In-place comparison sorting algorithm.
 
 Time complexity (average): `O(n^2)`.
 
+### [Bubble Sort](./sorting/bubble.go)
+Comparison-based sorting algorithm that repeatedly steps through the list,
+compares adjacent elements, and swaps them if they are in the wrong order.
+The pass through the list is repeated until the list is sorted.
+
+Time complexity (average): `O(n^2)`.
+
 ## Searching Algorithms:
 
 ### Binary Search

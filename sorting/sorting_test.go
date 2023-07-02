@@ -28,6 +28,7 @@ func TestSortingAlgorithms(t *testing.T) {
 		HeapSort{},
 		InsertionSort{},
 		SelectionSort{},
+		BubbleSort{},
 	}
 
 	for _, testCase := range testCases {
