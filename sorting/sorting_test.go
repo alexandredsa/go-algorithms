@@ -27,13 +27,13 @@ func TestSortingAlgorithms(t *testing.T) {
 		MergeSort{},
 		HeapSort{},
 		InsertionSort{},
+		SelectionSort{},
 	}
 
 	for _, testCase := range testCases {
-		arr := make([]int, len(testCase.input))
-		copy(arr, testCase.input)
-
 		for _, sorter := range sorters {
+			arr := make([]int, len(testCase.input))
+			copy(arr, testCase.input)
 			sorter.Sort(arr)
 			if !reflect.DeepEqual(arr, testCase.expected) {
 				t.Errorf("Sorting failed. Expected: %v, Got: %v", testCase.expected, arr)

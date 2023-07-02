@@ -41,7 +41,10 @@ one item at a time.
 
 Time complexity (average): `O(n^2)`.
 
-### Selection Sort
+### [Selection Sort](./sorting/selection.go)
+In-place comparison sorting algorithm.
+
+Time complexity (average): `O(n^2)`.
 
 ## Searching Algorithms:
 
