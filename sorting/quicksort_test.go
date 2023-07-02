@@ -1,0 +1,30 @@
+package sorting
+
+import (
+	"reflect"
+	"testing"
+)
+
+func TestQuickSort(t *testing.T) {
+	testCases := []struct {
+		input    []int
+		expected []int
+	}{
+		{[]int{64, 25, 12, 22, 11}, []int{11, 12, 22, 25, 64}},
+		{[]int{9, 8, 7, 6, 5}, []int{5, 6, 7, 8, 9}},
+		{[]int{1, 2, 3, 4, 5}, []int{1, 2, 3, 4, 5}},
+		{[]int{}, []int{}},
+		{[]int{1}, []int{1}},
+	}
+
+	for _, testCase := range testCases {
+		arr := make([]int, len(testCase.input))
+		copy(arr, testCase.input)
+
+		QuickSort{}.Sort(arr)
+
+		if !reflect.DeepEqual(arr, testCase.expected) {
+			t.Errorf("Sorting failed. Expected: %v, Got: %v", testCase.expected, arr)
+		}
+	}
+}
