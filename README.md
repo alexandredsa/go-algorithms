@@ -53,10 +53,11 @@ The pass through the list is repeated until the list is sorted.
 
 ## Searching Algorithms:
 
-| Algorithm              | Time Complexity       | Space Complexity      |
-|------------------------|-----------------------|-----------------------|
-| Linear Search          | O(n)                  | O(1)                  |
-| Binary Search          | O(log n)              | O(1)                  |
+| Algorithm       | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
+|-----------------|---------------------|-------------------------|-----------------------|
+| Linear Search   | O(1)                | O(n)                    | O(n)                  |
+| Binary Search   | O(1)                | O(log n)                | O(log n)              |
+
 
 
 ### [Binary Search](./searching/binary.go)
@@ -68,17 +69,24 @@ Search for a target element iterating over the array.
 
 ## Graphs:
 
+| Algorithm                    | Best Time Complexity  | Average Time Complexity     | Worst Time Complexity  |
+| ---------------------------- | -------------------- | --------------------------- | ---------------------- |
+| Depth-First Search (DFS)     | O(V + E)             | O(V + E)                    | O(V + E)               |
+| Breadth-First Search (BFS)   | O(V + E)             | O(V + E)                    | O(V + E)               |
+| Dijkstra's Algorithm         | O((V + E) log V)     | O((V + E) log V)            | O((V + E) log V)       |
+| Bellman-Ford Algorithm       | O(VE)                | O(VE)                       | O(VE)                  |
+
+
 ### [Depth-First Search (DFS)](./graph/dfs.go)
 Graph traversal algorithm that explores as far as possible along each branch before backtracking.
 
 ### [Breadth-First Search (BFS)](./graph/bfs.go)
 Graph traversal algorithm that explores all the vertices of a graph in breadth-first order, visiting neighbors before visiting their neighbors.
 
-### Dijkstra's Algorithm (shortest path)
-### Bellman-Ford Algorithm (shortest path with negative weights)
-### Kruskal's Algorithm (minimum spanning tree)
-### Prim's Algorithm (minimum spanning tree)
-
+### [Dijkstra's Algorithm](./graph/dijkstra.go)
+Finds the shortest path between a source vertex and all other vertices in a weighted graph with non-negative edge weights.
+### [Bellman-Ford Algorithm](./graph/bellmanford.go)
+Finds the shortest path between a source vertex and all other vertices in a weighted graph, even with negative edge weights.
 ## Dynamic Programming:
 
 ### Knapsack Problem
