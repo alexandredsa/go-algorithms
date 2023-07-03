@@ -53,30 +53,26 @@ The pass through the list is repeated until the list is sorted.
 
 ## Searching Algorithms:
 
-| Algorithm              | Time Complexity       | Space Complexity      | Array Application | Graph Application |
-|------------------------|-----------------------|-----------------------|-------------------|-------------------|
-| Linear Search          | O(n)                  | O(1)                  | ✓                 |                   |
-| Binary Search          | O(log n)              | O(1)                  | ✓                 |                   |
-| Depth-First Search     | O(b^m)                | O(bm)                 |                   | ✓                 |
-| Breadth-First Search   | O(b^d)                | O(b^d)                |                   | ✓                 |
-
-- `b` = branching factor
-- `m` = maximum depth or level
-- `d` = depth
-
----
+| Algorithm              | Time Complexity       | Space Complexity      |
+|------------------------|-----------------------|-----------------------|
+| Linear Search          | O(n)                  | O(1)                  |
+| Binary Search          | O(log n)              | O(1)                  |
 
 
 ### [Binary Search](./searching/binary.go)
 Efficient algorithm for finding a specific element in a sorted array by repeatedly dividing the search interval in half.
 
-### [Depth-First Search (DFS)](./searching/dfs.go)
+### [Linear Search](./searching/linear.go)
+Search for a target element iterating over the array.
+
+
+## Graphs:
+
+### [Depth-First Search (DFS)](./graph/dfs.go)
 Graph traversal algorithm that explores as far as possible along each branch before backtracking.
 
-### [Breadth-First Search (BFS)](./searching/bfs.go)
+### [Breadth-First Search (BFS)](./graph/bfs.go)
 Graph traversal algorithm that explores all the vertices of a graph in breadth-first order, visiting neighbors before visiting their neighbors.
-
-## Graph Algorithms:
 
 ### Dijkstra's Algorithm (shortest path)
 ### Bellman-Ford Algorithm (shortest path with negative weights)
