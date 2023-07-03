@@ -13,7 +13,7 @@ type TestCase struct {
 	expected    int
 }
 
-func TestSearchingAlgorithms(t *testing.T) {
+func TestArraySearchingAlgorithms(t *testing.T) {
 	testCases := []TestCase{
 		{
 			description: "Empty array, returns -1",
@@ -41,9 +41,9 @@ func TestSearchingAlgorithms(t *testing.T) {
 		},
 	}
 
-	searchers := []searching.Searcher{
+	searchers := []searching.ArraySearcher{
 		searching.BinarySearch{},
-		searching.DFS{},
+		searching.LinearSearcher{},
 	}
 
 	for _, testCase := range testCases {
