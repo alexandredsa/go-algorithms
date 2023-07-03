@@ -15,24 +15,24 @@ type TestCase struct {
 
 func TestSearchingAlgorithms(t *testing.T) {
 	testCases := []TestCase{
-		// {
-		// 	description: "Empty array, returns -1",
-		// 	input:       []int{},
-		// 	target:      10,
-		// 	expected:    -1,
-		// },
-		// {
-		// 	description: "Single-element array, target found at index 0",
-		// 	input:       []int{1},
-		// 	target:      1,
-		// 	expected:    0,
-		// },
-		// {
-		// 	description: "Target element not found, returns -1",
-		// 	input:       []int{1, 2, 3, 4, 5},
-		// 	target:      6,
-		// 	expected:    -1,
-		// },
+		{
+			description: "Empty array, returns -1",
+			input:       []int{},
+			target:      10,
+			expected:    -1,
+		},
+		{
+			description: "Single-element array, target found at index 0",
+			input:       []int{1},
+			target:      1,
+			expected:    0,
+		},
+		{
+			description: "Target element not found, returns -1",
+			input:       []int{1, 2, 3, 4, 5},
+			target:      6,
+			expected:    -1,
+		},
 		{
 			description: "Target element found at index 3",
 			input:       []int{10, 20, 30, 40, 50},
