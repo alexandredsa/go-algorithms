@@ -37,6 +37,23 @@ func (q QuickSort) Sort(arr []int) {
 	q.Sort(arr[pivotIndex+1:])
 }
 
+// partition rearranges the elements of the given integer array in-place
+// based on a pivot element and returns the index of the pivot.
+//
+// The pivot element is chosen as the last element in the array.
+// This function follows the Lomuto partition scheme.
+//
+// It iterates through the array, moving elements smaller than or equal to
+// the pivot to the left side of the pivot index and elements greater than
+// the pivot to the right side.
+//
+// Parameters:
+//
+//	arr []int: The integer array to be partitioned.
+//
+// Returns:
+//
+//	int: The index of the pivot element after partitioning.
 func (q QuickSort) partition(arr []int) int {
 	pivot := arr[len(arr)-1]
 	i := 0

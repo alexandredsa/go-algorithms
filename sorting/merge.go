@@ -38,6 +38,25 @@ func (m MergeSort) Sort(arr []int) {
 	m.merge(arr, left, right)
 }
 
+// merge combines two sorted subarrays, 'left' and 'right', into a single sorted array 'arr'.
+// It uses the indices 'i', 'j', and 'k' to track the positions within the arrays.
+//
+// The 'i' index represents the current element being considered in the 'left' subarray,
+// the 'j' index represents the current element being considered in the 'right' subarray,
+// and the 'k' index represents the index in the 'arr' array where the merged elements will be placed.
+//
+// The function iterates through the 'left' and 'right' subarrays simultaneously,
+// comparing the elements and placing them in the 'arr' array in ascending order.
+// The indices 'i', 'j', and 'k' are incremented accordingly during this process.
+//
+// After the initial iteration, any remaining elements in either the 'left' or 'right' subarray
+// are copied directly to the 'arr' array using additional loops.
+//
+// Parameters:
+//
+//	arr []int: The array where the merged elements will be placed.
+//	left []int: The left subarray.
+//	right []int: The right subarray.
 func (m MergeSort) merge(arr, left, right []int) {
 	i, j, k := 0, 0, 0
 
