@@ -53,13 +53,26 @@ The pass through the list is repeated until the list is sorted.
 
 ## Searching Algorithms:
 
-### Binary Search
+| Algorithm              | Time Complexity       | Space Complexity      |
+|------------------------|-----------------------|-----------------------|
+| Linear Search          | O(n)                  | O(1)                  |
+| Binary Search          | O(log n)              | O(1)                  |
 
-### Depth-First Search (DFS)
 
-### Breadth-First Search (BFS)
+### [Binary Search](./searching/binary.go)
+Efficient algorithm for finding a specific element in a sorted array by repeatedly dividing the search interval in half.
 
-## Graph Algorithms:
+### [Linear Search](./searching/linear.go)
+Search for a target element iterating over the array.
+
+
+## Graphs:
+
+### [Depth-First Search (DFS)](./graph/dfs.go)
+Graph traversal algorithm that explores as far as possible along each branch before backtracking.
+
+### [Breadth-First Search (BFS)](./graph/bfs.go)
+Graph traversal algorithm that explores all the vertices of a graph in breadth-first order, visiting neighbors before visiting their neighbors.
 
 ### Dijkstra's Algorithm (shortest path)
 ### Bellman-Ford Algorithm (shortest path with negative weights)
