@@ -67,13 +67,13 @@ The pass through the list is repeated until the list is sorted.
 ---
 
 
-### Binary Search
+### [Binary Search](./searching/binary.go)
 Efficient algorithm for finding a specific element in a sorted array by repeatedly dividing the search interval in half.
 
-### Depth-First Search (DFS)
+### [Depth-First Search (DFS)](./searching/dfs.go)
 Graph traversal algorithm that explores as far as possible along each branch before backtracking.
 
-### Breadth-First Search (BFS)
+### [Breadth-First Search (BFS)](./searching/bfs.go)
 Graph traversal algorithm that explores all the vertices of a graph in breadth-first order, visiting neighbors before visiting their neighbors.
 
 ## Graph Algorithms:
