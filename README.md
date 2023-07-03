@@ -54,10 +54,13 @@ The pass through the list is repeated until the list is sorted.
 ## Searching Algorithms:
 
 ### Binary Search
+Efficient algorithm for finding a specific element in a sorted array by repeatedly dividing the search interval in half.
 
 ### Depth-First Search (DFS)
+Graph traversal algorithm that explores as far as possible along each branch before backtracking.
 
 ### Breadth-First Search (BFS)
+Graph traversal algorithm that explores all the vertices of a graph in breadth-first order, visiting neighbors before visiting their neighbors.
 
 ## Graph Algorithms:
 
