@@ -41,7 +41,7 @@ func TestSearchingAlgorithms(t *testing.T) {
 		},
 	}
 
-	searchers := []searching.Searcher{searching.BinarySearcher{}}
+	searchers := []searching.Searcher{searching.BinarySearch{}}
 
 	for _, testCase := range testCases {
 		t.Run(testCase.description, func(t *testing.T) {

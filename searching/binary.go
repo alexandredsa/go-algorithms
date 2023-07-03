@@ -1,11 +1,11 @@
 package searching
 
-// BinarySearcher implements the Binary Search algorithm to search for a target element in a sorted integer array.
-type BinarySearcher struct{}
+// BinarySearch implements the Binary Search algorithm to search for a target element in a sorted integer array.
+type BinarySearch struct{}
 
 // Search performs a binary search on the given sorted integer array for the target element.
 // It returns the index of the target element if found, or -1 if not found.
-func (bs BinarySearcher) Search(arr []int, target int) int {
+func (bs BinarySearch) Search(arr []int, target int) int {
 	low, high := 0, len(arr)-1
 
 	for low <= high {
