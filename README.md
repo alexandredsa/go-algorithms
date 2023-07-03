@@ -53,6 +53,20 @@ The pass through the list is repeated until the list is sorted.
 
 ## Searching Algorithms:
 
+| Algorithm             | Pros                                                                                                                                                                                         | Cons                                                                                                                         | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------- | ----------------------- | -------------------- |
+| Binary Search         | - Efficient for searching in sorted arrays.<br>- Time complexity of O(log n) provides fast search times for large arrays.<br>- Well-suited for scenarios where the data is static or rarely changes. | - Requires the array to be sorted beforehand.<br>- Only applicable to ordered data.<br>- Requires random access to the array. | O(1)                 | O(log n)                | O(log n)              |
+| Depth-First Search    | - Simplicity and ease of implementation.<br>- Suitable for traversing and searching in tree or graph structures.                                                                            | - Can get trapped in infinite loops if not implemented properly.<br>- Does not guarantee the shortest path.                 | O(b^m)              | O(b^m)                  | O(b^m)               |
+| Breadth-First Search  | - Guarantees the shortest path from the source to the target.<br>- Suitable for finding the shortest path in unweighted graphs.                                                             | - Requires more memory compared to Depth-First Search due to the need for a queue data structure.<br>- Slower on large graphs. | O(b^d)              | O(b^d)                  | O(b^d)               |
+
+
+- `b` = branching factor
+- `m` = maximum depth or level
+- `d` = depth
+
+---
+
+
 ### Binary Search
 Efficient algorithm for finding a specific element in a sorted array by repeatedly dividing the search interval in half.
 
