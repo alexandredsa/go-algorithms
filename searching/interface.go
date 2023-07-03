@@ -5,5 +5,6 @@ type ArraySearcher interface {
 }
 
 type GraphSearcher interface {
-	// Search(arr []int, target int) int
+	Name() string
+	Search(graph [][]int, start int, target int) bool
 }
